@@ -645,14 +645,6 @@ aside p {
     width: 49%;
   }
 
-  /* Footer */
-
-  footer .content-wraper {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-
   /********** ABOUT PAGE ************/
 
   .mission-content {
@@ -689,8 +681,87 @@ aside p {
   .faq-content article {
     width: 45%;
   }
+
+  /* Footer */
+
+  footer .content-wraper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
-social @media only screen and (min-width: 1200px) {
+
+@media only screen and (min-width: 1200px) {
+  /* General styles */
+
+  .content-wraper {
+    max-width: 950px;
+  }
+
+  /******** Home Page *********/
+
+  /* hero area */
+
+  .hero-area h1 {
+    width: 70%;
+    font-size: 2.3em;
+  }
+
+  /* aside */
+
+  aside {
+    width: 100%;
+  }
+
+  aside .form-description,
+  aside .form {
+    width: 40%;
+  }
+
+  /* Features */
+
+  .features .features-content article {
+    flex-basis: 33%;
+  }
+
+  .features {
+    height: 900px;
+  }
+
+  /* Reviews */
+
+  .reviews {
+    height: 700px;
+  }
+  /******** ABOUT Page *********/
+
+  /* mission */
+
+  .mission h1 {
+    font-size: 3em;
+  }
+
+  /* contact section */
+
+  .contact-section .contact-content {
+    width: 90%;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .contact-section h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+
+  .contact-section h3 {
+    font-size: 1.8em;
+  }
+  /******** FAQ Page *********/
+
+  .faq h1 {
+    font-size: 3em;
+  }
 }
 
 /* ==========================================================================
