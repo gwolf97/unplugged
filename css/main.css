@@ -89,6 +89,18 @@ textarea {
 
 /***** Header - Footer Styles *****/
 
+ {
+  border: 1px solid violet;
+}
+
+figure {
+  margin: 0;
+}
+
+header figure {
+  margin-bottom: 10px;
+}
+
 header,
 footer {
   display: flex;
@@ -185,10 +197,10 @@ footer h3 {
 .social-icons {
   display: flex;
   align-items: center;
-  flex-flow: row wrap;
   width: 100%;
   justify-content: space-around;
   box-sizing: border-box;
+  margin-left: -20px;
 }
 
 .social-icons li {
@@ -197,8 +209,6 @@ footer h3 {
   background-color: #527158;
   padding: 10px 10px;
   border-radius: 30px;
-  height: 15px;
-  width: 15px;
 }
 
 .copyright {
@@ -286,7 +296,7 @@ aside p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  height: 1700px;
+  height: 100%;
   background: url(../img/rawpixel-800820-unsplash1.jpg);
   background-size: cover;
   background-position: center;
@@ -333,9 +343,14 @@ aside p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  height: 850px;
+  height: 100%;
   background-color: #2a423a;
   color: #fff;
+  box-sizing: border-box;
+}
+
+.reviews article {
+  box-sizing: border-box;
 }
 
 .reviews h3 {
@@ -351,8 +366,10 @@ aside p {
   margin: 20px 0;
 }
 
-.reviews-img img {
-  height: 300px;
+.reviews-description {
+}
+
+img {
   width: 100%;
 }
 
@@ -573,6 +590,10 @@ aside p {
     height: 100px;
   }
 
+  header figure {
+    margin: 0;
+  }
+
   header nav {
     width: 40%;
   }
@@ -616,11 +637,6 @@ aside p {
     height: 250px;
   }
 
-  .features article img {
-    height: 60px;
-    width: 60px;
-  }
-
   .features p {
     width: 60%;
   }
@@ -637,12 +653,12 @@ aside p {
   }
 
   .reviews-img {
-    width: 300px;
-    height: 200px;
+    width: 49%;
   }
 
   .reviews-description {
     width: 49%;
+    margin-top: -30px;
   }
 
   /********** ABOUT PAGE ************/
@@ -689,6 +705,10 @@ aside p {
     display: flex;
     justify-content: space-around;
   }
+
+  footer li {
+    margin: 0 10px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -730,9 +750,6 @@ aside p {
 
   /* Reviews */
 
-  .reviews {
-    height: 700px;
-  }
   /******** ABOUT Page *********/
 
   /* mission */
