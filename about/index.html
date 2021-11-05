@@ -19,6 +19,24 @@
     <link rel="stylesheet" href="../css/main.css" />
 
     <meta name="theme-color" content="#fafafa" />
+    <style>
+      .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+      }
+      .embed-container iframe,
+      .embed-container object,
+      .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -73,14 +91,15 @@
 
       <section class="map">
         <figure>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47005.09349995561!2d-88.42642740000001!3d42.58037805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880584e9f85c4509%3A0x9eb9a6efc12afe43!2sLake%20Geneva%2C%20WI%2053147%2C%20USA!5e0!3m2!1sen!2sco!4v1635354381192!5m2!1sen!2sco"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+          <div class="embed-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387144.0075834208!2d-73.97800349999999!3d40.7056308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY!5e0!3m2!1sen!2sus!4v1394298866288"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+            ></iframe>
+          </div>
         </figure>
       </section>
 
